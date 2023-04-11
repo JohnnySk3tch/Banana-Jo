@@ -1,0 +1,192 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: rgb(137, 203, 137);
+    margin: 0;
+    color: rgb(184, 234, 137);
+}
+
+h2 {
+    font-family: optima serif;
+    color: rgb(24, 92, 24);
+    text-shadow: 0.1em 0.1em 0.1em orange;
+    font-size: 2em;
+}
+
+h3 {
+    font-weight: 100;
+    transition: font-weight 0.3s ease-in-out;
+}
+
+#options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    margin-top: 4em;
+}
+
+#options * {
+    margin: 1em;
+}
+
+#btnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#btnContainer p {
+    color: rgb(44, 69, 27);
+    font-size: 1.3em;
+    font-weight: 300;
+    z-index: 1000;
+    background-color: rgb(221, 251, 177);
+    opacity: 0.8;
+    padding: 0.5em;
+    border-radius: 2em;
+}
+#startbtn {
+    padding: 1em 2.5em 1em 2.5em;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: rgb(206, 229, 154);
+    border-radius: 1em;
+    border-style: none;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(45, 56, 45);
+    color: white;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+#startbtn:hover {
+    background-color: rgb(168, 189, 120);
+}
+
+#gameoverMassage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 900;
+}
+
+#gameoverMassage div {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    background-color: rgb(126, 192, 120);
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(45, 56, 45);
+}
+
+#gameoverMassage p {
+    white-space: pre-wrap;
+    font-size: 2.5em;
+}
+
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#ground {
+    z-index: -1;
+}
+
+#layer_0 {
+    z-index: 0;
+}
+
+#layer_1 {
+    z-index: 1;
+
+}
+
+#layer_2 {
+    z-index: 2;
+
+}
+
+#layer_3 {
+    z-index: 3;
+}
+
+#layer_4 {
+    z-index: 4;
+}
+
+#layer_5 {
+    z-index: 5;
+}
+
+#layer_6 {
+    z-index: 6;
+}
+
+#layer_7 {
+    z-index: 7;
+}
+
+#backgroundSoundBtn {
+    cursor: pointer;
+}
+
+#freepikLink {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.5em;
+    color:rgb(221, 251, 177);
+    text-decoration: none;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#soundOnOffBtn {
+    display: block;
+    z-index: 1000;
+    background-color: rgb(52, 99, 22);
+    border-radius: 0.5em;
+    color:rgb(182, 228, 140);
+    border-style: none;
+    box-shadow: 0.1em 0.1em 0.1em black;
+    cursor: pointer;
+}
+
+#soundOnOffBtn:hover {
+    background-color: rgb(135, 194, 99);
+}
+
+#coinPointsImg {
+    width: 1%;
+    margin-left: -0.4%;
+}
+
+#lifepointPlusOne {
+    font-size: 5em;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transition: font-size 0.3s ease-in-out;
+  }
